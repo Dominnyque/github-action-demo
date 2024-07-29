@@ -1,0 +1,15 @@
+name: 04 using actions
+
+on: push
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        # 0. Checkout the code from the repository
+        # 1. Intsall applications dpts
+        # 2. Execute automates tests
+        steps:
+            - name: Checkou the code
+              uses: actions/checkout@v4
+            - name: Printing Folders
+              run: ls -l
